@@ -10,6 +10,7 @@ pipeline {
         stage('Hello') {
             steps {
                 library('groovylib')
+                SayHello('Hello Pipeline!!!')
                 echo env.PATH
                 script {
                     def browsers = ['chrome', 'firefox']
